@@ -1,0 +1,35 @@
+.hero {
+	padding-top: 52px;
+}
+
+.hero h2 {
+	font-family: var(--font-heading);
+	font-size: clamp(24px, 3vw, 48px);
+	font-weight: 700;
+	margin-bottom: 12px;
+}
+
+.hero ul {
+	list-style-image: url("/assets/6dots.svg");
+	list-style-position: inside;
+	list-style-type: disc;
+	margin-bottom: 43px;
+	padding-right: 287px;
+}
+
+.hero li {
+	color: var(--color-gray-2);
+	font-family: var(--font-desc);
+	font-size: clamp(12px, 1.5vw, 14px);
+	font-style: italic;
+	font-weight: 500;
+	line-height: normal;
+
+	text-indent: -23px;
+	padding-left: 23px;
+}
+
+.hero-image img {
+	width: 100%;
+	height: auto;
+}

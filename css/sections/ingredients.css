@@ -1,0 +1,141 @@
+.ingredients {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 48px;
+}
+
+.ingredients__check {
+	width: 550px;
+	max-width: 100%;
+}
+
+.ingredients__check h3 {
+	color: var(--color-gray-1);
+	font-family: Playfair Display;
+	font-size: clamp(18px, 2vw, 24px);
+	font-weight: 700;
+	margin-bottom: 32px;
+}
+
+.ingredients__check h5 {
+	color: var(--color-gray-1);
+	font-family: Playfair Display;
+	font-size: clamp(16px, 1vw, 18px);
+	font-style: italic;
+	font-weight: 400;
+	margin-bottom: 32px;
+}
+
+.ingredients__check ul {
+	/* list-style: none; */
+	color: var(--color-gray-1);
+	font-family: Montserrat;
+	font-size: clamp(14px, 1vw, 16px);
+	font-weight: 400;
+	margin-bottom: 32px;
+	line-height: 25px; /* 156.25% */
+}
+
+.ingredients__check li {
+	display: flex;
+	align-items: start;
+	justify-content: start;
+	padding-bottom: 12px;
+}
+
+.ingredients__check input {
+	width: 21px;
+}
+
+/* Menghilangkan default styling checkbox */
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	appearance: none;
+	border: 1px solid #000;
+	width: 21px;
+	height: 21px;
+	border-radius: 4px;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	outline: none;
+	/* Align checkboxes vertically with labels */
+}
+
+/* Mengatur tampilan label checkbox */
+label {
+	margin-left: 10px;
+	vertical-align: middle; /* Align labels vertically with checkboxes */
+	line-height: 1.5;
+}
+
+input[type="checkbox"]:after {
+	content: "\2713";
+	opacity: 0;
+	font-size: 14px;
+	line-height: 20px;
+	width: 21px;
+	height: 21px;
+	text-align: center;
+	color: #fff;
+}
+
+input[type="checkbox"]:hover {
+	background-color: var(--color-gray-3);
+}
+
+input[type="checkbox"]:checked {
+	background-color: var(--color-orange);
+}
+
+input[type="checkbox"]:checked:after {
+	opacity: 1;
+}
+
+/* time unit */
+
+.ingredients__time-bg {
+	padding: 57px 54px 50px 40px;
+	border-radius: 12px;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+	font-family: var(--font-desc);
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 43px;
+	flex-wrap: wrap;
+}
+
+.ingredients__time-unit {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+.material-symbols-outlined.dining {
+	font-color: var(--color-orange);
+}
+.ingredients__time-unit h5 {
+	color: var(--color-gray-1);
+	font-family: var(--font-des);
+	font-size: clamp(10px, 1vw, 14px);
+	font-weight: 500;
+}
+
+.time-detail p {
+	margin-bottom: 4px;
+
+	color: var(--color-gray-4);
+	font-family: Montserrat;
+	font-size: clamp(8px, 1vw, 10px);
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.material-symbols-outlined {
+	font-size: clamp(17px, 2.5vw, 34px);
+	color: var(--color-gray-2);
+}

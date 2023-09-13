@@ -1,0 +1,67 @@
+.instructions {
+}
+
+.instructions h3 {
+	color: var(--color-gray-1);
+	font-family: Playfair Display;
+	font-size: clamp(18px, 2vw, 24px);
+	font-weight: 700;
+	margin-bottom: 32px;
+}
+
+.instructions__step {
+	width: 550px;
+	max-width: 100%;
+}
+
+.instructions__step ol {
+	list-style-type: none;
+	list-style: none;
+	counter-reset: my-counter;
+}
+
+.instructions__step li {
+	display: flex;
+	align-items: start;
+	justify-content: start;
+
+	color: var(--color-gray-1);
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 32px;
+	line-height: 25px;
+
+	counter-increment: my-counter;
+}
+
+.instructions__step li::before {
+	content: counter(my-counter);
+
+	background-color: var(--color-orange);
+	border-radius: 6px;
+	padding: 0 13px;
+	padding-bottom: 7px;
+	width: 36px;
+	height: 36px;
+	font-family: var(--font-heading);
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	color: #fff;
+
+	box-sizing: border-box;
+	margin-right: 15px;
+}
+
+.instructions__step a {
+	color: #bdbdbd;
+	font-family: var(--font-desc);
+	font-size: clamp(12px, 1vw, 16px);
+	font-style: italic;
+	font-weight: 400;
+	line-height: 150%; /* 24px */
+
+	margin-top: 15px;
+}
